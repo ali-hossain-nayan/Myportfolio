@@ -4,7 +4,8 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-import resume from "../assets/resume.pdf"; // Import your resume file
+// import resume from "../assets/resume.pdf"; // Import your resume file
+import CV from "../assets/cv.pdf"
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -79,7 +80,7 @@ const NavBar = () => {
                 Contact
               </Nav.Link>
               <Nav.Link
-                href={resume}
+                href={CV}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

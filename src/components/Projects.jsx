@@ -4,6 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.jpg";
 import projImg2 from "../assets/img/project-img2.jpg";
 import projImg3 from "../assets/img/project-img3.avif";
+import projImg4 from '../assets/img/project-img4.webp';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 const Projects = () => {
@@ -31,10 +32,19 @@ const Projects = () => {
       description:
         "A menu card where users can choose different types of foods at different times.",
       imgUrl: projImg3,
-      githubLink: "https://github.com/Nayan1234l/Restaurant_Manu_React",
+      githubLink: "https://github.com/ali-hossain-nayan/Restaurant_Manu_React",
       deploymentLink: "https://restaurant-manu-react.vercel.app/",
       Technology: ["React"],
       figmaLink: "https://www.figma.com/",
+    },
+    {
+      title: "Nike Shoes",
+      description:
+        "It's a simple frontend projet where different types of Nike shoes are displayed",
+      imgUrl: projImg4,
+      githubLink: "https://github.com/ali-hossain-nayan/Nike",
+      deploymentLink: "https://nike-beta-blond.vercel.app/",
+      Technology: ["React + Tailwind CSS"],
     },
     // Add more projects with their respective GitHub and deployment links
   ];

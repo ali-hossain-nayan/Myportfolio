@@ -6,6 +6,7 @@ import projImg2 from "../assets/img/project-img2.jpg";
 import projImg3 from "../assets/img/project-img3.avif";
 import projImg4 from '../assets/img/project-img4.webp';
 import projImg5 from '../assets/img/project-img5.webp';
+import projImg6 from '../assets/img/grocy-mart.webp';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 const Projects = () => {
@@ -45,6 +46,15 @@ const Projects = () => {
       imgUrl: projImg4,
       githubLink: "https://github.com/ali-hossain-nayan/Nike",
       deploymentLink: "https://nike-beta-blond.vercel.app/",
+      Technology: ["React + Tailwind CSS"],
+    },
+    {
+      title: "GrocyMart",
+      description:
+        "It's a simple frontend projet where different types of GrocyMart are displayed",
+      imgUrl: projImg6,
+      githubLink: "https://github.com/ali-hossain-nayan/groccey-shop",
+      deploymentLink: "https://grocy-mart-pied.vercel.app/",
       Technology: ["React + Tailwind CSS"],
     },
     {

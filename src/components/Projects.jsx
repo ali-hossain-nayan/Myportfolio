@@ -7,6 +7,7 @@ import projImg3 from "../assets/img/project-img3.avif";
 import projImg4 from '../assets/img/project-img4.webp';
 import projImg5 from '../assets/img/project-img5.webp';
 import projImg6 from '../assets/img/grocy-mart.webp';
+import projImg7 from "../assets/img/project-img7.avif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 const Projects = () => {
@@ -21,6 +22,15 @@ const Projects = () => {
       Technology: ["React", "Appwrite"],
     },
     {
+      title: "GrocyMart",
+      description:
+        "It's a simple frontend projet where different types of GrocyMart are displayed",
+      imgUrl: projImg6,
+      githubLink: "https://github.com/ali-hossain-nayan/groccey-shop",
+      deploymentLink: "https://grocy-mart-pied.vercel.app/",
+      Technology: ["React + Tailwind CSS"],
+    },
+    {
       title: "Todo App",
       description:
         "It's an app where users can add, delete, and update todos. Using Context API, the todo list persists even after page refresh. Also, stores todos in local storage. User authentication is handled using Auth0.",
@@ -28,6 +38,25 @@ const Projects = () => {
       githubLink: "https://github.com/Nayan1234l/Todos-React",
       deploymentLink: "https://vivasoft-todo.vercel.app/",
       Technology: ["React", "Auth-0"],
+    },
+    {
+      title: "Office Lunch Management System",
+      description:
+        "For the easy way to choose  office employee lunch .  ",
+      imgUrl: projImg5,
+      githubLink: "https://github.com/ali-hossain-nayan/Office-Lunch-Management",
+      deploymentLink: "https://office-lunch-management-theta.vercel.app/",
+      Technology: ["React + Express.js + Node.js"],
+    },
+    {
+      title: "PhotoGraphy",
+      description:
+        "It's a simple frontend projet where different types of photography are displayed",
+      imgUrl: projImg7,
+      githubLink: "https://github.com/ali-hossain-nayan/photgraphy",
+      deploymentLink: "https://photgraphy.vercel.app/",
+      Technology: ["React"],
+      // figmaLink: "https://www.figma.com/",
     },
     {
       title: "Menu Card",
@@ -47,24 +76,6 @@ const Projects = () => {
       githubLink: "https://github.com/ali-hossain-nayan/Nike",
       deploymentLink: "https://nike-beta-blond.vercel.app/",
       Technology: ["React + Tailwind CSS"],
-    },
-    {
-      title: "GrocyMart",
-      description:
-        "It's a simple frontend projet where different types of GrocyMart are displayed",
-      imgUrl: projImg6,
-      githubLink: "https://github.com/ali-hossain-nayan/groccey-shop",
-      deploymentLink: "https://grocy-mart-pied.vercel.app/",
-      Technology: ["React + Tailwind CSS"],
-    },
-    {
-      title: "Office Lunch Management System",
-      description:
-        "For the easy way to choose  office employee lunch .  ",
-      imgUrl: projImg5,
-      githubLink: "https://github.com/ali-hossain-nayan/Office-Lunch-Management",
-      deploymentLink: "https://office-lunch-management-theta.vercel.app/",
-      Technology: ["React + Express.js + Node.js"],
     },
     // Add more projects with their respective GitHub and deployment links
   ];

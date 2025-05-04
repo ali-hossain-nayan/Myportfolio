@@ -11,40 +11,37 @@ export const ProjectCard = ({
   figmaLink,
 }) => {
   return (
-    <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx">
-        <img src={imgUrl} alt={title} />
-        <div className="proj-txtx">
+    <Col xs={12} sm={6} md={4} className="mb-4">
+      <div className="proj-imgbx" style={{ border: "1px solid #ddd", borderRadius: "8px", overflow: "hidden", backgroundColor: "#fff" }}>
+        <img src={imgUrl} alt={title} style={{ width: "100%", height: "200px", objectFit: "cover" }} />
+        <div className="proj-txtx" style={{ padding: "15px" }}>
           <h4>{title}</h4>
-          <span>{description}</span>
-          <div>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <p>{description}</p>
+          <div style={{ marginTop: "10px" }}>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer" style={{ marginRight: "10px" }}>
               GitHub
-            </a>{" "}
-            {/* Add space here */}
+            </a>
             <a href={deploymentLink} target="_blank" rel="noopener noreferrer">
-              Deployment
+              Live Site
             </a>
             {Technology && (
-              <div>
-                <strong>Technology:</strong>
-                <ul>
+              <div style={{ marginTop: "10px" }}>
+                <strong>Technologies:</strong>
+                <ul style={{ paddingLeft: "20px" }}>
                   {Technology.map((tech, index) => (
                     <li key={index}>{tech}</li>
                   ))}
                 </ul>
               </div>
             )}
-            {Technology &&
-              Technology.includes("Ui-Ux") &&
-              figmaLink && ( // Check if 'Ui-Ux' is in the Technology array
-                <div>
-                  <strong>UI/UX Design:</strong>
-                  <a href={figmaLink} target="_blank" rel="noopener noreferrer">
-                    Figma Project
-                  </a>
-                </div>
-              )}
+            {Technology?.includes("Ui-Ux") && figmaLink && (
+              <div style={{ marginTop: "10px" }}>
+                <strong>UI/UX Design:</strong>{" "}
+                <a href={figmaLink} target="_blank" rel="noopener noreferrer">
+                  Figma Project
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>

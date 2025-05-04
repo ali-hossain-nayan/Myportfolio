@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: "Modern Blogging Platform",
       description:
-        "It's a project where users can create an account and publish different types of blogs with titles, images, etc. CRUD operations, real-time updates, and SEO optimization are professionally handled.",
+        "Users can create accounts and publish blogs. Includes real-time updates, SEO, and CRUD operations.",
       imgUrl: projImg1,
       githubLink: "https://github.com/Nayan1234l/Blog-Sites",
       deploymentLink: "https://blog-sites-blue.vercel.app/",
@@ -23,8 +23,7 @@ const Projects = () => {
     },
     {
       title: "GrocyMart",
-      description:
-        "It's a simple frontend projet where different types of GrocyMart are displayed",
+      description: "Frontend project to display grocery items.",
       imgUrl: projImg6,
       githubLink: "https://github.com/ali-hossain-nayan/groccey-shop",
       deploymentLink: "https://grocy-mart-pied.vercel.app/",
@@ -33,7 +32,7 @@ const Projects = () => {
     {
       title: "Todo App",
       description:
-        "It's an app where users can add, delete, and update todos. Using Context API, the todo list persists even after page refresh. Also, stores todos in local storage. User authentication is handled using Auth0.",
+        "Todo app with context API and Auth0. Persisted with localStorage.",
       imgUrl: projImg2,
       githubLink: "https://github.com/Nayan1234l/Todos-React",
       deploymentLink: "https://vivasoft-todo.vercel.app/",
@@ -41,8 +40,7 @@ const Projects = () => {
     },
     {
       title: "Office Lunch Management System",
-      description:
-        "For the easy way to choose  office employee lunch .  ",
+      description: "Simplified lunch selection for office employees.",
       imgUrl: projImg5,
       githubLink: "https://github.com/ali-hossain-nayan/Office-Lunch-Management",
       deploymentLink: "https://office-lunch-management-theta.vercel.app/",
@@ -50,83 +48,160 @@ const Projects = () => {
     },
     {
       title: "PhotoGraphy",
-      description:
-        "It's a simple frontend projet where different types of photography are displayed",
+      description: "Frontend project displaying photography work.",
       imgUrl: projImg7,
       githubLink: "https://github.com/ali-hossain-nayan/photgraphy",
       deploymentLink: "https://photgraphy.vercel.app/",
       Technology: ["React"],
-      // figmaLink: "https://www.figma.com/",
     },
     {
       title: "Menu Card",
-      description:
-        "A menu card where users can choose different types of foods at different times.",
+      description: "Users can choose foods by time. Figma included.",
       imgUrl: projImg3,
       githubLink: "https://github.com/ali-hossain-nayan/Restaurant_Manu_React",
       deploymentLink: "https://restaurant-manu-react.vercel.app/",
-      Technology: ["React"],
+      Technology: ["React", "Ui-Ux"],
       figmaLink: "https://www.figma.com/",
     },
     {
       title: "Nike Shoes",
-      description:
-        "It's a simple frontend projet where different types of Nike shoes are displayed",
+      description: "Frontend project to display Nike shoes.",
       imgUrl: projImg4,
       githubLink: "https://github.com/ali-hossain-nayan/Nike",
       deploymentLink: "https://nike-beta-blond.vercel.app/",
       Technology: ["React + Tailwind CSS"],
     },
-    // Add more projects with their respective GitHub and deployment links
   ];
 
   return (
-    <section className="project" id="projects" style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
-      <Container fluid style={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <Row style={{ height: "100%", width: "100%" }}>
-          <Col style={{ height: "100%", display: "flex", flexDirection: "column" }}>
-            <h2>Projects</h2>
-            <p>
-              Here is my some projects
+    <section
+      className="project"
+      id="projects"
+      style={{
+        padding: "60px 0",
+        position: "relative",
+        backgroundColor: "#f9f9f9",
+      }}
+    >
+      <Container>
+        <Row>
+          <Col className="text-center">
+            <h2
+              style={{
+                color: "#222",
+                fontWeight: "700",
+                fontSize: "2.5rem",
+                marginBottom: "1rem",
+              }}
+            >
+              Projects
+            </h2>
+            <p
+              style={{
+                color: "#555",
+                fontSize: "1.1rem",
+                maxWidth: "700px",
+                margin: "0 auto 2rem",
+              }}
+            >
+              Explore some of my featured work including full-stack applications, frontend projects, and UI/UX designs.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav
-                variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills-tab"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Front-end</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Ui-Ux</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Backend</Nav.Link>
-                </Nav.Item>
-              </Nav>
+            <Nav
+  variant="pills"
+  className="nav-pills mb-5 justify-content-center"
+  id="pills-tab"
+  style={{ gap: '15px' }}
+>
+  <Nav.Item>
+    <Nav.Link
+      eventKey="first"
+      style={{
+        color: "#333",
+        backgroundColor: "#e9ecef",
+        fontWeight: "500",
+        borderRadius: "50px",
+        padding: "10px 20px",
+      }}
+      activeStyle={{
+        backgroundColor: "#0d6efd",
+        color: "#fff",
+      }}
+    >
+      Front-end
+    </Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link
+      eventKey="second"
+      style={{
+        color: "#333",
+        backgroundColor: "#e9ecef",
+        fontWeight: "500",
+        borderRadius: "50px",
+        padding: "10px 20px",
+      }}
+      activeStyle={{
+        backgroundColor: "#0d6efd",
+        color: "#fff",
+      }}
+    >
+      UI/UX
+    </Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link
+      eventKey="third"
+      style={{
+        color: "#333",
+        backgroundColor: "#e9ecef",
+        fontWeight: "500",
+        borderRadius: "50px",
+        padding: "10px 20px",
+      }}
+      activeStyle={{
+        backgroundColor: "#0d6efd",
+        color: "#fff",
+      }}
+    >
+      Backend
+    </Nav.Link>
+  </Nav.Item>
+</Nav>
+
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />;
-                    })}
+                    {projects.map((project, index) => (
+                      <ProjectCard key={index} {...project} />
+                    ))}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <Row>
                     {projects
-                      .filter(
-                        (project) =>
-                          project.Technology &&
-                          project.Technology.includes("Ui-Ux")
+                      .filter((project) =>
+                        project.Technology?.includes("Ui-Ux")
                       )
-                      .map((project, index) => {
-                        return <ProjectCard key={index} {...project} />;
-                      })}
+                      .map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
                   </Row>
                 </Tab.Pane>
-                {/* Add more Tab.Pane components for additional tabs */}
+                <Tab.Pane eventKey="third">
+                  <Row>
+                    {projects
+                      .filter((project) =>
+                        project.Technology?.some((tech) =>
+                          tech.toLowerCase().includes("express") ||
+                          tech.toLowerCase().includes("node")
+                        )
+                      )
+                      .map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
@@ -135,8 +210,15 @@ const Projects = () => {
       <img
         className="background-image-right"
         src={colorSharp2}
-        alt="Color Sharp 2"
-        style={{ position: "absolute", bottom: 0, right: 0, width: "50%", height: "auto" }}
+        alt="Decoration"
+        style={{
+          position: "absolute",
+          bottom: 0,
+          right: 0,
+          width: "300px",
+          opacity: 0.3,
+          pointerEvents: "none",
+        }}
       />
     </section>
   );

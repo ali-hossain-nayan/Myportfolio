@@ -23,6 +23,14 @@ const Projects = () => {
       Technology: ["Next.js", "Appwrite"],
     },
     {
+      title: "Khai Dai",
+      description: "Simplified lunch selection for office employees.",
+      imgUrl: projImg5,
+      githubLink: "https://github.com/ali-hossain-nayan/foodDel",
+      deploymentLink: "https://khaidai-com-frontend.onrender.com/",
+      Technology: ["React + Tailwind + Express.js + Node.js"],
+    },
+    {
       title: "Modern Blogging Platform",
       description:
         "Users can create accounts and publish blogs. Includes real-time updates, SEO, and CRUD operations.",
@@ -47,14 +55,6 @@ const Projects = () => {
       githubLink: "https://github.com/Nayan1234l/Todos-React",
       deploymentLink: "https://vivasoft-todo.vercel.app/",
       Technology: ["React", "Auth-0"],
-    },
-    {
-      title: "Khai Dai",
-      description: "Simplified lunch selection for office employees.",
-      imgUrl: projImg5,
-      githubLink: "https://github.com/ali-hossain-nayan/foodDel",
-      deploymentLink: "https://khaidai-com-frontend.onrender.com/",
-      Technology: ["React + Tailwind + Express.js + Node.js"],
     },
     {
       title: "PhotoGraphy",

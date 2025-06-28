@@ -8,10 +8,20 @@ import projImg4 from '../assets/img/project-img4.webp';
 import projImg5 from '../assets/img/project-img5.webp';
 import projImg6 from '../assets/img/grocy-mart.webp';
 import projImg7 from "../assets/img/project-img7.avif";
+import projImg8 from "../assets/img/project-img8.avif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "MediPlus",
+      description:
+        "Its a full-stack healthcare application with user authentication, appointment booking, and doctor profiles.",
+      imgUrl: projImg8,
+      githubLink: "https://github.com/ali-hossain-nayan/careplus",
+      deploymentLink: "https://careplus-m1ey.onrender.com/",
+      Technology: ["Next.js", "Appwrite"],
+    },
     {
       title: "Modern Blogging Platform",
       description:

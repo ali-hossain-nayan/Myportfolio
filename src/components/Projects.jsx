@@ -39,12 +39,12 @@ const Projects = () => {
       Technology: ["React", "Auth-0"],
     },
     {
-      title: "Office Lunch Management System",
+      title: "Khai Dai",
       description: "Simplified lunch selection for office employees.",
       imgUrl: projImg5,
-      githubLink: "https://github.com/ali-hossain-nayan/Office-Lunch-Management",
-      deploymentLink: "https://office-lunch-management-theta.vercel.app/",
-      Technology: ["React + Express.js + Node.js"],
+      githubLink: "https://github.com/ali-hossain-nayan/foodDel",
+      deploymentLink: "https://khaidai-com-frontend.onrender.com/",
+      Technology: ["React + Tailwind + Express.js + Node.js"],
     },
     {
       title: "PhotoGraphy",

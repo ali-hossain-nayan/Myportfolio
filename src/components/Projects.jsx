@@ -4,9 +4,9 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.jpg";
 import projImg2 from "../assets/img/project-img2.jpg";
 import projImg3 from "../assets/img/project-img3.avif";
-import projImg4 from '../assets/img/project-img4.webp';
-import projImg5 from '../assets/img/project-img5.webp';
-import projImg6 from '../assets/img/grocy-mart.webp';
+import projImg4 from "../assets/img/project-img4.webp";
+import projImg5 from "../assets/img/project-img5.webp";
+import projImg6 from "../assets/img/grocy-mart.webp";
 import projImg7 from "../assets/img/project-img7.avif";
 import projImg8 from "../assets/img/project-img8.avif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -16,11 +16,12 @@ const Projects = () => {
     {
       title: "MediPlus",
       description:
-        "Its a full-stack healthcare application with user authentication, appointment booking, and doctor profiles.",
+        "It's a full-stack healthcare application with user authentication, appointment booking, and doctor profiles.",
       imgUrl: projImg8,
       githubLink: "https://github.com/ali-hossain-nayan/careplus",
       deploymentLink: "https://careplus-m1ey.onrender.com/",
       Technology: ["Next.js", "Appwrite"],
+      category: "backend"
     },
     {
       title: "Khai Dai",
@@ -29,6 +30,7 @@ const Projects = () => {
       githubLink: "https://github.com/ali-hossain-nayan/foodDel",
       deploymentLink: "https://khaidai-com-frontend.onrender.com/",
       Technology: ["React + Tailwind + Express.js + Node.js"],
+      category: "backend"
     },
     {
       title: "Modern Blogging Platform",
@@ -38,6 +40,7 @@ const Projects = () => {
       githubLink: "https://github.com/Nayan1234l/Blog-Sites",
       deploymentLink: "https://blog-sites-blue.vercel.app/",
       Technology: ["React", "Appwrite"],
+      category: "frontend"
     },
     {
       title: "GrocyMart",
@@ -46,15 +49,16 @@ const Projects = () => {
       githubLink: "https://github.com/ali-hossain-nayan/groccey-shop",
       deploymentLink: "https://grocy-mart-pied.vercel.app/",
       Technology: ["React + Tailwind CSS"],
+      category: "frontend"
     },
     {
       title: "Todo App",
-      description:
-        "Todo app with context API and Auth0. Persisted with localStorage.",
+      description: "Todo app with context API and Auth0. Persisted with localStorage.",
       imgUrl: projImg2,
       githubLink: "https://github.com/Nayan1234l/Todos-React",
       deploymentLink: "https://vivasoft-todo.vercel.app/",
       Technology: ["React", "Auth-0"],
+      category: "frontend"
     },
     {
       title: "PhotoGraphy",
@@ -63,6 +67,7 @@ const Projects = () => {
       githubLink: "https://github.com/ali-hossain-nayan/photgraphy",
       deploymentLink: "https://photgraphy.vercel.app/",
       Technology: ["React"],
+      category: "frontend"
     },
     {
       title: "Menu Card",
@@ -72,6 +77,7 @@ const Projects = () => {
       deploymentLink: "https://restaurant-manu-react.vercel.app/",
       Technology: ["React", "Ui-Ux"],
       figmaLink: "https://www.figma.com/",
+      category: "frontend"
     },
     {
       title: "Nike Shoes",
@@ -80,7 +86,8 @@ const Projects = () => {
       githubLink: "https://github.com/ali-hossain-nayan/Nike",
       deploymentLink: "https://nike-beta-blond.vercel.app/",
       Technology: ["React + Tailwind CSS"],
-    },
+      category: "frontend"
+    }
   ];
 
   return (
@@ -90,7 +97,7 @@ const Projects = () => {
       style={{
         padding: "60px 0",
         position: "relative",
-        backgroundColor: "#f9f9f9",
+        backgroundColor: "#f9f9f9"
       }}
     >
       <Container>
@@ -101,7 +108,7 @@ const Projects = () => {
                 color: "#222",
                 fontWeight: "700",
                 fontSize: "2.5rem",
-                marginBottom: "1rem",
+                marginBottom: "1rem"
               }}
             >
               Projects
@@ -111,80 +118,70 @@ const Projects = () => {
                 color: "#555",
                 fontSize: "1.1rem",
                 maxWidth: "700px",
-                margin: "0 auto 2rem",
+                margin: "0 auto 2rem"
               }}
             >
               Explore some of my featured work including full-stack applications, frontend projects, and UI/UX designs.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-            <Nav
-  variant="pills"
-  className="nav-pills mb-5 justify-content-center"
-  id="pills-tab"
-  style={{ gap: '15px' }}
->
-  <Nav.Item>
-    <Nav.Link
-      eventKey="first"
-      style={{
-        color: "#333",
-        backgroundColor: "#e9ecef",
-        fontWeight: "500",
-        borderRadius: "50px",
-        padding: "10px 20px",
-      }}
-      activeStyle={{
-        backgroundColor: "#0d6efd",
-        color: "#fff",
-      }}
-    >
-      Front-end
-    </Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link
-      eventKey="second"
-      style={{
-        color: "#333",
-        backgroundColor: "#e9ecef",
-        fontWeight: "500",
-        borderRadius: "50px",
-        padding: "10px 20px",
-      }}
-      activeStyle={{
-        backgroundColor: "#0d6efd",
-        color: "#fff",
-      }}
-    >
-      UI/UX
-    </Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link
-      eventKey="third"
-      style={{
-        color: "#333",
-        backgroundColor: "#e9ecef",
-        fontWeight: "500",
-        borderRadius: "50px",
-        padding: "10px 20px",
-      }}
-      activeStyle={{
-        backgroundColor: "#0d6efd",
-        color: "#fff",
-      }}
-    >
-      Backend
-    </Nav.Link>
-  </Nav.Item>
-</Nav>
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center"
+                id="pills-tab"
+                style={{ gap: "15px" }}
+              >
+                <Nav.Item>
+                  <Nav.Link
+                    eventKey="first"
+                    style={{
+                      color: "#333",
+                      backgroundColor: "#e9ecef",
+                      fontWeight: "500",
+                      borderRadius: "50px",
+                      padding: "10px 20px"
+                    }}
+                  >
+                    Front-end
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link
+                    eventKey="second"
+                    style={{
+                      color: "#333",
+                      backgroundColor: "#e9ecef",
+                      fontWeight: "500",
+                      borderRadius: "50px",
+                      padding: "10px 20px"
+                    }}
+                  >
+                    UI/UX
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link
+                    eventKey="third"
+                    style={{
+                      color: "#333",
+                      backgroundColor: "#e9ecef",
+                      fontWeight: "500",
+                      borderRadius: "50px",
+                      padding: "10px 20px"
+                    }}
+                  >
+                    Backend
+                  </Nav.Link>
+                </Nav.Item>
+              </Nav>
 
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects.map((project, index) => (
-                      <ProjectCard key={index} {...project} />
-                    ))}
+                    {projects
+                      .filter((project) => project.category === "frontend")
+                      .map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
@@ -201,12 +198,7 @@ const Projects = () => {
                 <Tab.Pane eventKey="third">
                   <Row>
                     {projects
-                      .filter((project) =>
-                        project.Technology?.some((tech) =>
-                          tech.toLowerCase().includes("express") ||
-                          tech.toLowerCase().includes("node")
-                        )
-                      )
+                      .filter((project) => project.category === "backend")
                       .map((project, index) => (
                         <ProjectCard key={index} {...project} />
                       ))}
@@ -227,7 +219,7 @@ const Projects = () => {
           right: 0,
           width: "300px",
           opacity: 0.3,
-          pointerEvents: "none",
+          pointerEvents: "none"
         }}
       />
     </section>

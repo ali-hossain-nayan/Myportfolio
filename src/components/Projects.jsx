@@ -16,12 +16,12 @@ const Projects = () => {
     {
       title: "MediPlus",
       description:
-        "It's a full-stack healthcare application with user authentication, appointment booking, and doctor profiles.",
+        "A full-stack healthcare application with user authentication, appointment booking, and doctor profiles.",
       imgUrl: projImg8,
       githubLink: "https://github.com/ali-hossain-nayan/careplus",
       deploymentLink: "https://careplus-m1ey.onrender.com/",
       Technology: ["Next.js", "Appwrite"],
-      category: "backend"
+      category: "backend",
     },
     {
       title: "Khai Dai",
@@ -30,18 +30,18 @@ const Projects = () => {
       githubLink: "https://github.com/ali-hossain-nayan/foodDel",
       deploymentLink: "https://khaidai-com-frontend.onrender.com/",
       Technology: ["React + Tailwind + Express.js + Node.js"],
-      category: "backend"
+      category: "backend",
     },
-    {
-      title: "Modern Blogging Platform",
-      description:
-        "Users can create accounts and publish blogs. Includes real-time updates, SEO, and CRUD operations.",
-      imgUrl: projImg1,
-      githubLink: "https://github.com/Nayan1234l/Blog-Sites",
-      deploymentLink: "https://blog-sites-blue.vercel.app/",
-      Technology: ["React", "Appwrite"],
-      category: "frontend"
-    },
+    // {
+    //   title: "Modern Blogging Platform",
+    //   description:
+    //     "Users can create accounts and publish blogs. Includes real-time updates, SEO, and CRUD operations.",
+    //   imgUrl: projImg1,
+    //   githubLink: "https://github.com/Nayan1234l/Blog-Sites",
+    //   deploymentLink: "https://blog-sites-blue.vercel.app/",
+    //   Technology: ["React", "Appwrite"],
+    //   category: "frontend",
+    // },
     {
       title: "GrocyMart",
       description: "Frontend project to display grocery items.",
@@ -49,35 +49,36 @@ const Projects = () => {
       githubLink: "https://github.com/ali-hossain-nayan/groccey-shop",
       deploymentLink: "https://grocy-mart-pied.vercel.app/",
       Technology: ["React + Tailwind CSS"],
-      category: "frontend"
+      category: "frontend",
     },
     {
       title: "Todo App",
-      description: "Todo app with context API and Auth0. Persisted with localStorage.",
+      description:
+        "Todo app with Context API and Auth0. Persisted with localStorage.",
       imgUrl: projImg2,
       githubLink: "https://github.com/Nayan1234l/Todos-React",
       deploymentLink: "https://vivasoft-todo.vercel.app/",
       Technology: ["React", "Auth-0"],
-      category: "frontend"
+      category: "frontend",
     },
     {
       title: "PhotoGraphy",
-      description: "Frontend project displaying photography work.",
+      description: "Frontend project showcasing photography work.",
       imgUrl: projImg7,
       githubLink: "https://github.com/ali-hossain-nayan/photgraphy",
       deploymentLink: "https://photgraphy.vercel.app/",
       Technology: ["React"],
-      category: "frontend"
+      category: "frontend",
     },
     {
       title: "Menu Card",
       description: "Users can choose foods by time. Figma included.",
       imgUrl: projImg3,
-      githubLink: "https://github.com/ali-hossain-nayan/Restaurant_Manu_React",
+      githubLink:
+        "https://github.com/ali-hossain-nayan/Restaurant_Manu_React",
       deploymentLink: "https://restaurant-manu-react.vercel.app/",
       Technology: ["React", "Ui-Ux"],
-      figmaLink: "https://www.figma.com/",
-      category: "frontend"
+      category: "frontend",
     },
     {
       title: "Nike Shoes",
@@ -86,8 +87,8 @@ const Projects = () => {
       githubLink: "https://github.com/ali-hossain-nayan/Nike",
       deploymentLink: "https://nike-beta-blond.vercel.app/",
       Technology: ["React + Tailwind CSS"],
-      category: "frontend"
-    }
+      category: "frontend",
+    },
   ];
 
   return (
@@ -96,8 +97,10 @@ const Projects = () => {
       id="projects"
       style={{
         padding: "60px 0",
+        backgroundColor: "#121212", // updated to darker background
+        color: "#fff",
         position: "relative",
-        backgroundColor: "#f9f9f9"
+        minHeight: "100vh",
       }}
     >
       <Container>
@@ -105,40 +108,43 @@ const Projects = () => {
           <Col className="text-center">
             <h2
               style={{
-                color: "#222",
                 fontWeight: "700",
-                fontSize: "2.5rem",
-                marginBottom: "1rem"
+                fontSize: "2.3rem",
+                marginBottom: "1rem",
               }}
             >
               Projects
             </h2>
             <p
               style={{
-                color: "#555",
-                fontSize: "1.1rem",
+                color: "#ccc",
+                fontSize: "1rem",
                 maxWidth: "700px",
-                margin: "0 auto 2rem"
+                margin: "0 auto 2rem",
               }}
             >
-              Explore some of my featured work including full-stack applications, frontend projects, and UI/UX designs.
+              Explore my featured full-stack and frontend projects. Each project
+              is built with modern technologies and optimized for all devices.
             </p>
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+
+            {/* Tabs with only Frontend and Backend */}
+            <Tab.Container id="projects-tabs" defaultActiveKey="frontend">
               <Nav
                 variant="pills"
-                className="nav-pills mb-5 justify-content-center"
+                className="nav-pills mb-5 justify-content-center flex-wrap"
                 id="pills-tab"
-                style={{ gap: "15px" }}
+                style={{ gap: "10px" }}
               >
                 <Nav.Item>
                   <Nav.Link
-                    eventKey="first"
+                    eventKey="frontend"
                     style={{
-                      color: "#333",
-                      backgroundColor: "#e9ecef",
+                      color: "#fff",
+                      backgroundColor: "#333",
                       fontWeight: "500",
-                      borderRadius: "50px",
-                      padding: "10px 20px"
+                      borderRadius: "0px",
+                      padding: "8px 18px",
+                      fontSize: "0.95rem",
                     }}
                   >
                     Front-end
@@ -146,27 +152,14 @@ const Projects = () => {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link
-                    eventKey="second"
+                    eventKey="backend"
                     style={{
-                      color: "#333",
-                      backgroundColor: "#e9ecef",
+                      color: "#fff",
+                      backgroundColor: "#333",
                       fontWeight: "500",
-                      borderRadius: "50px",
-                      padding: "10px 20px"
-                    }}
-                  >
-                    UI/UX
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link
-                    eventKey="third"
-                    style={{
-                      color: "#333",
-                      backgroundColor: "#e9ecef",
-                      fontWeight: "500",
-                      borderRadius: "50px",
-                      padding: "10px 20px"
+                      borderRadius: "0px",
+                      padding: "8px 18px",
+                      fontSize: "0.95rem",
                     }}
                   >
                     Backend
@@ -175,8 +168,8 @@ const Projects = () => {
               </Nav>
 
               <Tab.Content>
-                <Tab.Pane eventKey="first">
-                  <Row>
+                <Tab.Pane eventKey="frontend">
+                  <Row xs={1} sm={2} lg={3} className="g-4 rounded-full">
                     {projects
                       .filter((project) => project.category === "frontend")
                       .map((project, index) => (
@@ -184,19 +177,8 @@ const Projects = () => {
                       ))}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">
-                  <Row>
-                    {projects
-                      .filter((project) =>
-                        project.Technology?.includes("Ui-Ux")
-                      )
-                      .map((project, index) => (
-                        <ProjectCard key={index} {...project} />
-                      ))}
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="third">
-                  <Row>
+                <Tab.Pane eventKey="backend">
+                  <Row xs={1} sm={2} lg={3} className="g-4">
                     {projects
                       .filter((project) => project.category === "backend")
                       .map((project, index) => (
@@ -209,6 +191,8 @@ const Projects = () => {
           </Col>
         </Row>
       </Container>
+
+      {/* Decorative background image */}
       <img
         className="background-image-right"
         src={colorSharp2}
@@ -217,9 +201,9 @@ const Projects = () => {
           position: "absolute",
           bottom: 0,
           right: 0,
-          width: "300px",
-          opacity: 0.3,
-          pointerEvents: "none"
+          width: "280px",
+          opacity: 0.1,
+          pointerEvents: "none",
         }}
       />
     </section>

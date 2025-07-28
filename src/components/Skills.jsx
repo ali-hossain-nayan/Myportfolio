@@ -57,10 +57,10 @@ const Skills = () => {
             >
               <h2>Skills</h2>
               <p>
-                I have core idea of Frontend Development && I'm also passionate
-                about problem solving with various platform like Codeforces,
-                Leetcode, Beecrowd, Hackerrank && Have a good idea about UI
-                design specially in Figma!!
+                I specialize in <strong>Front-end Development</strong> and{" "}
+                <strong>Problem Solving</strong>, with experience in building
+                responsive, dynamic applications. Hands on experience on backend development and solving coding challenges
+                across platforms like LeetCode, Codeforces, and HackerRank.
               </p>
               <Carousel
                 responsive={responsive}
@@ -77,7 +77,7 @@ const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Img" />
-                  <h5>UI-UX Design</h5>
+                  <h5>Backend-Development</h5>
                 </div>
               </Carousel>
             </div>

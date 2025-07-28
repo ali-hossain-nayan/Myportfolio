@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { FaReact, FaJs, FaHtml5, FaNodeJs } from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
+  SiTypescript,
+  SiNextdotjs,
+} from "react-icons/si";
 import headerImg from "../assets/img/header-img.jpg";
 
 const Banner = () => {
@@ -13,12 +20,11 @@ const Banner = () => {
 
   useEffect(() => {
     let ticker = setInterval(() => {
-      ticker();
+      tick();
     }, delta);
-    return () => {
-      clearInterval(ticker);
-    };
-  }, text);
+    return () => clearInterval(ticker);
+  }, [text]);
+
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
@@ -34,52 +40,81 @@ const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
       setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
     }
   };
+
   return (
-    <>
-      <section className="banner" id="home">
-        <Container>
-          <Row className="align-items-center">
-            <Col xs={12} md={6} xl={7}>
-              <span className="tagline">Welcome to my Portfolio</span>
-              <h1>
-                {`Hi! I'm Ali Hossain Nayan`}{" "}
-                <span
-                  className="txt-rotate"
-                  dataPeriod="1000"
-                  data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-                >
-                  <span className="wrap">{text}</span>
-                </span>
-              </h1>
-              <p>
-                A passionate React developer exploring the world of technology
-                and its limitless possibilities. I have completed Learnathon 2.0
-                with Vivasoft Ltd 2023(Sep)-2024(Feb). Have a core idea of HTML,
-                Tailwind CSS, Bootstrap, JavaScript, TypeScript, React.js,
-                Next.js,
-                <button className="btn" onClick={() => console.log("connect")}>
-                  Let’s Connect <ArrowRightCircle size={25} />
-                </button>
+    <section
+      className="banner"
+      id="home"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        minHeight: "100vh",
+        padding: "40px 0",
+      }}
+    >
+      <Container>
+        <Row className="align-items-center">
+          {/* Text Section */}
+          <Col xs={12} md={7} className="text-start">
+            <div style={{ maxWidth: "600px", marginLeft: "auto", marginRight: "auto" }}>
+              <h1 className="fw-bold mb-3">Front-end React Developer</h1>
+              <p className="mb-4">
+                Hi, I am Ali Hossain Nayan. A passionate React developer with
+                hands-on experience in building responsive web applications from
+                Dhaka, Bangladesh.
               </p>
-            </Col>
-            <Col xs={12} md={6} xl={5}>
-              <img src={headerImg} alt="headerImg" />
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </>
+
+              {/* Tech Stack Section */}
+              <div
+                className="mt-4 d-flex flex-wrap align-items-center"
+                style={{
+                  fontSize: "1.8rem",
+                  gap: "1.2rem",
+                  justifyContent: "flex-start",
+                }}
+              >
+                <h4 className="mb-0">Tech Stack |</h4>
+                <FaReact color="#61DBFB" title="React.js" />
+                <FaJs color="#F0DB4F" title="JavaScript" />
+                <SiTypescript color="#3178C6" title="TypeScript" />
+                <SiNextdotjs color="#000000" title="Next.js" />
+                <SiTailwindcss color="#38B2AC" title="Tailwind CSS" />
+                <FaHtml5 color="#E34C26" title="HTML5" />
+                <SiMongodb color="#4DB33D" title="MongoDB" />
+                <FaNodeJs color="#68A063" title="Node.js" />
+              </div>
+            </div>
+          </Col>
+
+          {/* Image Section */}
+          <Col
+            xs={10}
+            md={5}
+            className="d-flex justify-content-center justify-content-md-end mt-4 mt-md-0"
+          >
+            <img
+              src={headerImg}
+              alt="headerImg"
+              className="img-fluid rounded shadow"
+              style={{
+                maxHeight: "400px",
+                objectFit: "cover",
+                animation: "none",
+                transform: "none",
+                transition: "none",
+              }}
+            />
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 };
 

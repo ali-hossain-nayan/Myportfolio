@@ -156,3 +156,64 @@ button,
     color: #fff;
   }
 }
+/* Centered Navbar with Theme Support */
+.custom-navbar {
+  width: 100%;
+  background-color: var(--bg-dark);
+  transition: all 0.3s ease;
+  padding: 0.8rem 1rem;
+  z-index: 1050;
+}
+
+.custom-navbar.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Brand Title */
+.nav-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* Navbar Links */
+.navbar-link {
+  color: var(--text-light);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: var(--accent);
+}
+
+/* Collapse background fix on mobile */
+.navbar-collapse {
+  background-color: var(--bg-dark);
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .custom-navbar {
+    background-color: #ffffff;
+  }
+  .nav-title {
+    color: #213547;
+  }
+  .navbar-link {
+    color: #213547;
+  }
+  .navbar-link:hover,
+  .navbar-link.active {
+    color: var(--accent);
+  }
+  .navbar-collapse {
+    background-color: #ffffff;
+  }
+}

@@ -9,6 +9,7 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import headerImg from "../assets/img/header-img.jpg";
+import resume from "../assets/Updated-Resume .pdf";
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -48,7 +49,7 @@ const Banner = () => {
     }
   };
 
-  return (
+ return (
     <section
       className="banner"
       id="home"
@@ -57,6 +58,7 @@ const Banner = () => {
         alignItems: "center",
         minHeight: "100vh",
         padding: "40px 0",
+        margin: "20px"
       }}
     >
       <Container>
@@ -70,6 +72,34 @@ const Banner = () => {
                 hands-on experience in building responsive web applications from
                 Dhaka, Bangladesh.
               </p>
+
+              {/* Resume Download Button */}
+              <a
+                href={resume}
+                download="Ali_Hossain_Nayan_Resume.pdf"
+                className="btn btn-primary mb-4"
+                style={{
+                  padding: "10px 25px",
+                  fontSize: "1rem",
+                  fontWeight: "600",
+                  borderRadius: "8px",
+                  textDecoration: "none",
+                  display: "inline-block",
+                  backgroundColor: "#61dafb",
+                  color: "#121212",
+                  transition: "background-color 0.3s ease",
+                  userSelect: "none",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "#21a1f1";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "#61dafb";
+                }}
+                aria-label="Download Resume"
+              >
+                Download Resume
+              </a>
 
               {/* Tech Stack Section */}
               <div

@@ -7,13 +7,17 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import { useState } from "react";
 
 function App() {
+   const [navExpanded, setNavExpanded] = useState(false);
   return (
     <div className="App">
-      <NavBar />
-      <Banner/>
-      <Skills className="mt-12"/>
+ <NavBar onToggle={(expanded) => setNavExpanded(expanded)} />
+      <Banner navExpanded={navExpanded} />
+      {/* <Skills className="mt-12"/> */}
+      <About/>
       <Projects/>
       <Contact/>
       <Footer/>

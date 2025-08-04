@@ -486,9 +486,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
-/* body { */
- /* padding-top: 56px; or more if your navbar is taller */
-/* }  */
+
 
 /************ Projects Css ************/
 /* Contact Section */
@@ -703,7 +701,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
-/* About Section */
 /* About Section */
 .about-section {
   display: flex;

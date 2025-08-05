@@ -49,7 +49,7 @@ const Projects = () => {
     },
     {
       title: "Nayanography",
-      description: "Personal photography site frontend built with React and Tailwind CSS for a seamless shopping experience.",
+      description: "Personal photography site frontend built with React and Tailwind CSS for a seamless photo session experience.",
       imgUrl: projImg7,
       githubLink: "https://github.com/ali-hossain-nayan/photgraphy",
       deploymentLink: "https://photgraphy.vercel.app/",

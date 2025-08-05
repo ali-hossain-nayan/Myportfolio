@@ -10,6 +10,7 @@ import projImg6 from "../assets/img/grocy-mart.webp";
 import projImg7 from "../assets/img/project-img7.avif";
 import projImg8 from "../assets/img/project-img8.avif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import cashkit from '../assets/img/cashKit.jpg'
 
 const Projects = () => {
   const projects = [
@@ -28,6 +29,14 @@ const Projects = () => {
       imgUrl: projImg5,
       githubLink: "https://github.com/ali-hossain-nayan/foodDel",
       deploymentLink: "https://khaidai-com-frontend.onrender.com/",
+      Technology: ["React + Tailwind + Express.js + Node.js"],
+    },
+    {
+      title: "CashKit	",
+      description: "Full-stack app to track and manage daily expenses. Built with React, Tailwind CSS Node.js, and MongoDB.",
+      imgUrl: cashkit,
+      githubLink: "https://github.com/ali-hossain-nayan/CashKit",
+      deploymentLink: "https://cashkit-static.onrender.com",
       Technology: ["React + Tailwind + Express.js + Node.js"],
     },
     {

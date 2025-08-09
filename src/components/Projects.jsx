@@ -1,7 +1,6 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.jpg";
+import Apple from "../assets/img/apple-ipone.jpg";
 import projImg2 from "../assets/img/project-img2.jpg";
 import projImg3 from "../assets/img/project-img3.avif";
 import projImg4 from "../assets/img/project-img4.webp";
@@ -79,6 +78,14 @@ const Projects = () => {
       imgUrl: projImg4,
       githubLink: "https://github.com/ali-hossain-nayan/Nike",
       deploymentLink: "https://nike-beta-blond.vercel.app/",
+      Technology: ["React + Tailwind CSS"],
+    },
+    {
+      title: "LadningPage",
+      description: "Responsive React + Tailwind CSS frontend showcasing APPLE collections.",
+      imgUrl: Apple,
+      githubLink: "https://github.com/ali-hossain-nayan/Branding",
+      deploymentLink: "https://branding-7n6f.onrender.com",
       Technology: ["React + Tailwind CSS"],
     },
   ];

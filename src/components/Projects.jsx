@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import Apple from "../assets/img/apple-ipone.jpg";
+import Contact from "../assets/img/contact.jpg";
 import projImg2 from "../assets/img/project-img2.jpg";
 import projImg3 from "../assets/img/project-img3.avif";
 import projImg4 from "../assets/img/project-img4.webp";
@@ -86,6 +87,14 @@ const Projects = () => {
       imgUrl: Apple,
       githubLink: "https://github.com/ali-hossain-nayan/Branding",
       deploymentLink: "https://branding-7n6f.onrender.com",
+      Technology: ["React + Tailwind CSS"],
+    },
+    {
+      title: "ContactPage",
+      description: "Responsive React + Tailwind CSS frontend Conact page",
+      imgUrl: Contact,
+      githubLink: "https://github.com/ali-hossain-nayan/ContactPage",
+      deploymentLink: "contact-page-three-mauve.vercel.app",
       Technology: ["React + Tailwind CSS"],
     },
   ];
